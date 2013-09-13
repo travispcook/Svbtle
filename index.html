@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Svtle</title>
+	<link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+	
+		<section id="left">
+			<a href "/" id="logo">
+				<h1>Svbtle</h1>
+			</a>
+			<div id="Featured">
+				<p>Featured</p>
+			</div>	
+			<div id="headline">
+				<p>How Much of Your Fantasy Football Draft is Predetermined by League Projections?</p>
+			</div>
+			<div id="Author">	
+				<p>BENN STANCIL</p>
+			</div>
+
+			<div class="content">
+				<img src="http://static.tvgcdn.net/MediaBin/Galleries/Shows/G_L/La_Lh/League_The/season3/the-league-45.jpg" />
+			
+				<p>Two weeks ago, we kicked off our fantasy season with a player draft. ESPN’s draft center provides fantasy owners with an overwhelming amount of information on each player, but time and again, only one data point seemed to matter: how many points ESPN projected that player would score. Pick after pick, teams would choose the best available player at each position. By the end of the draft, we were all wondering the same thing: How much do these projections affect draft results?</p>
+
+				<p>Most leagues follow this pattern, in which fantasy owners tend to adhere to the player rankings provided by the league. While teams rarely select the highest point scorer available - kickers, for instance, tend to get drafted much later than running backs, regardless of their projected output - teams typically follow to point projections by position. In other words, the draft order of wide receivers is nearly identical to the point projection ranking for wide receivers.</p>
+
+				<p>Projections and picksNobody knows what to make of Jonathan Dwyer’s up-and-down preseason</p>
+
+				<p>This relationship doesn’t necessarily imply that teams are drafting mechanically according to ESPN’s recommendations. People want to draft the best players, so it makes sense for there to be close relationship between draft orders and the consensus on who’s best. ESPN’s “expert” advice could determine our opinions on players, or it could simply reflect what we already know.</p>
+
+				<p>Fortunately, there are other cases in which that advice is different. CBS, which manages another widely used fantasy football platform, provides their own projections for their leagues. By comparing the differences in CBS and ESPN point projections to the differences in average draft positions, we can estimate how much drafts are affected by these projections.</p>
+
+				<p>As it turns out, we just do what we’re told. (Except Rage Against the Machine. They won’t do what we tell them.) Differences in ESPN and CBS rankings by position strongly correlate with differences in ESPN and CBS draft outcomes. According to rough calculations, approximately 35% of the variation in CBS’s and ESPN’s draft results can be explained by differences in how each league projects players will perform.</p>
+
+				<p>The relationship is even stronger if you eliminate the later rounds, which are mostly made of up of teams drafting backups and bench players. For players drafted in the first 10 rounds, differences in projections explain 70% of the differences in draft results. Ranking a player one spot lower within their position (e.g., projecting a running back to score the 10th most points instead of 9th) lowers that players average draft position by about two picks.</p>
+
+				<p>Ranking differencesWe’re all sheep</p>
+
+				<p>Though leagues sometimes have different scoring methods (passing TDs are worth 4 points in ESPN leagues and 6 in CBS leagues), ranking players by position - as is done here - rather than comparing the nominal point projections should negate most of these differences.</p>
+
+				<p>Are Auction Drafts Different?</p>
+
+				<p>These results may actually be more interesting (and actionable) in auction drafts. In an auction draft, every player comes up for auction. Teams, which are all allotted a certain amount of money (typically $200), fill their rosters by bidding on the players they want, and the highest bidder for each player pays that amount for him. Because this format doesn’t constrain fantasy owners to pick in any particular order and everyone has an equal opportunity to buy each player, fantasy owners can therefore more easily take advantage of market inefficiencies.</p>
+
+				<p>Unfortunately, CBS doesn’t provide data on average bid values for players. However, as shown below, ESPN bid values are strongly correlated with average draft positions. Assuming CBS bids also closely mirror their standard draft outcomes, we can estimate bid values from CBS' average draft position data.</p>
+
+				<p>bids and draft positionAdrian Peterson? More Like Adrian PAYterson.</p>
+
+				<p>After estimating the average bid value for CBS players, we can then compare differences in league projections to differences in bid values, just as was done with draft results. In this case, differences in projections have less of an impact on what teams are willing to bid for players than on when players get drafted. (Why the weaker relationship? Possibly because CBS values are estimated, and possibly because auction drafts usually involve more experienced players who are less likely to simply follow league forecasts.) Nevertheless, as shown in the graph, there is still a significant negative relationship between differences in projections and differences in bid values, implying that, despite teams in both leagues bidding on the same player, players will be worth less in leagues that project them to do worse. For example, because ESPN expects Eddie Lacey to score 15 more points than CBS, ESPN teams were still willing to pay $9 more for him than CBS teams.</p>
+
+				<p>differences in bidsSpending money must make us think more carefully</p>
+
+				<p>These finding have a couple implications. First, fantasy owners can use aggregated projections such as these to take advantage of anomalous league projections. Second, (as will be discussed further in a future post), teams can use projections to anticipate other teams' draft picks, which can be used to model optimal drafting strategies.</p>
+
+				<p>Data and Analysis Code</p>
+
+				<p>Data was first collected on ESPN projections and draft results, and CBS projections and draft results. Each dataset was gathered in a CSV.</p>
+
+				<p>Analysis was done in R (h/t to Fantasy Football Analytics in R for inspiration and a bit of R code) and visualizations were made in Excel.</p>
+
+				<p>All of the data, CSVs, R scripts, and charts that powered this analysis can be found in this folder.</p>
+
+
+
+				<p>More by Benn »</p>
+
+				<p>Crossing the People Management Chasm: A Necessity of Startup Growth
+				TOMASZ TUNGUZ</p>
+
+				ropebridge.jpg
+
+				<p>One of the hardest but least spoken about transitions in a startup’s life is crossing people management chasm.</p>
+
+				<p>At the outset of the startup, there might be three people, then eight, then fifteen. As they grow, startups often create ad hoc managers I call team leads.</p>
+
+				<p>Team leads manage 3 to 5 people. They work alongside their team, whether engineering, sales or marketing and contribute actively to achieving the goals of that team team. They code, sell or market for 50% of their time. With the remainder, team leads coordinate team members, set goals and measure progress. In company sizes around 30 to 50 or so, team lead structures work well.</p>
+
+				<p>As the company scales, the number of team leads in the business grows, so someone must be appointed to manage the team leads.</p>
+
+				<p>This is the people management chasm.</p>
+
+				<p>The manager of team leads isn’t a team lead himself because he doesn’t actively contribute to any one of his team’s output - there’s not enough time to do both well. He’s a different kind of manager, a team builder.</p>
+
+				<p>The team builder is responsible for cultivating the people within that team, recruiting and hiring additional members of the team, and guiding the team to perform at a high level. The team builder spends 90%+ of his time in one-on-one meetings, recruiting meetings and progress evaluation meetings. CEOs are team builders almost from the very first day of a startup’s life.</p>
+
+				<p>Crossing the people management chasm, hiring the first people manager, is challenging. After all, the interview process used to evaluate individual contributors is no longer valid. Nor will annual review processes work - the metrics to evaluate a manager’s performance differ from an individual contributor. Suddenly all the criteria have changed. What got you here won’t get you there.</p>
+
+				<p>At this point, the startup has to develop another competency: how to hire and manage people managers. Like other skills, successful startups research this competency by speaking with experts, solicit advice from well-known and successful managers and founders who have done this before. They speak with recruiters before launching search processes about the kinds of managers who will fit best into their startup’s culture and they iterate on their interview and evaluation processes.</p>
+
+				<p>Crossing this chasm is the key to growing the business. It’s not easy but it’s essential.</p>
+
+				<p>Sign up to receive these posts as a newsletter</p>
+
+
+
+				<p>More by Tomasz »</p>
+
+
+
+			</div>	
+		</section>
+
+
+		<section id="right">
+			
+			
+
+		</section>
+
+
+</body> 
