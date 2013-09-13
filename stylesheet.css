@@ -14,3 +14,10 @@
 #headline{
 	
 }
+/*created right and dcreated margins and border line*/
+#right {
+	width: 37%;
+	float: left;
+	border-left: black 2px solid
+
+}
